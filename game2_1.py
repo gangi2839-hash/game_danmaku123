@@ -2,44 +2,44 @@ import pygame as pg, sys, math
 pg.init()
 screen = pg.display.set_mode((800,600))
 
-trapimg = pg.image.load("game1.ori/dotpict_21.png") #boss
+trapimg = pg.image.load("game2_1_images/dotpict_21.png") #boss
 trapimg = pg.transform.scale(trapimg,(70,70))
-boss_1_body = pg.image.load("game1.ori/dotpict_13.png")
+boss_1_body = pg.image.load("game2_1_images/dotpict_13.png")
 boss_1_body = pg.transform.scale(boss_1_body,(490,490))
 boss_1_body_rect = pg.Rect(310,5,490,490)
-boss_1_head = pg.image.load("game1.ori/dotpict_22.png")
+boss_1_head = pg.image.load("game2_1_images/dotpict_22.png")
 boss_1_head = pg.transform.scale(boss_1_head,(120,120))
 boss_1_head_small = pg.transform.scale(boss_1_head,(40,35))
 boss_1_head_rect = pg.Rect(500,195,120,120)
-boss_1_head_damage = pg.image.load("game1.ori/dotpict_23.png")
+boss_1_head_damage = pg.image.load("game2_1_images/dotpict_23.png")
 boss_1_head_damage = pg.transform.scale(boss_1_head_damage,(120,120))
 boss_all_1_rect = pg.Rect(750,0,100,500)
 
-HPimg = pg.image.load("game1.ori/dotpict_28.png") #能力
+HPimg = pg.image.load("game2_1_images/dotpict_28.png") #能力
 HPimg = pg.transform.scale(HPimg,(40,40))
-speedimg = pg.image.load("game1.ori/dotpict_31.png")
+speedimg = pg.image.load("game2_1_images/dotpict_31.png")
 speedimg = pg.transform.scale(speedimg,(45,45))
-enemyHPimg = pg.image.load("game1.ori/dotpict_27.png")
+enemyHPimg = pg.image.load("game2_1_images/dotpict_27.png")
 enemyHPimg = pg.transform.scale(enemyHPimg,(40,40))
 
-chara_1 = pg.image.load("game1.ori/dotpict_12.png") #プレイヤー
+chara_1 = pg.image.load("game2_1_images/dotpict_12.png") #プレイヤー
 chara_1 = pg.transform.scale(chara_1,(80,80))
-chara_2 = pg.image.load("game1.ori/dotpict_18.png")
+chara_2 = pg.image.load("game2_1_images/dotpict_18.png")
 chara_2 = pg.transform.scale(chara_2,(80,80))
-chara_3 = pg.image.load("game1.ori/dotpict_14.png")
+chara_3 = pg.image.load("game2_1_images/dotpict_14.png")
 chara_3 = pg.transform.scale(chara_3,(80,80))
-transparent_chara_1 = pg.image.load("game1.ori/dotpict_30.png")
+transparent_chara_1 = pg.image.load("game2_1_images/dotpict_30.png")
 transparent_chara_1 = pg.transform.scale(transparent_chara_1,(80,80))
-transparent_chara_2 = pg.image.load("game1.ori/dotpict_29.png")
+transparent_chara_2 = pg.image.load("game2_1_images/dotpict_29.png")
 transparent_chara_2 = pg.transform.scale(transparent_chara_2,(80,80))
-transparent_chara_3 = pg.image.load("game1.ori/dotpict_32.png")
+transparent_chara_3 = pg.image.load("game2_1_images/dotpict_32.png")
 transparent_chara_3 = pg.transform.scale(transparent_chara_3,(80,80))
 
-startimg = pg.image.load("game1.ori/dotpict_25.png") #ボタン
+startimg = pg.image.load("game2_1_images/dotpict_25.png") #ボタン
 startimg = pg.transform.scale(startimg,(150,150))
-hardimg = pg.image.load("game1.ori/dotpict_24.png")
+hardimg = pg.image.load("game2_1_images/dotpict_24.png")
 hardimg = pg.transform.scale(hardimg,(150,150))
-replay_img = pg.image.load("game1.ori/dotpict_34.png")
+replay_img = pg.image.load("game2_1_images/dotpict_34.png")
 
 walls = [pg.Rect(0,0,800,20), #行動範囲
          pg.Rect(0,0,20,600),
