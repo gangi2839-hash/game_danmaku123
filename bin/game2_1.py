@@ -4,9 +4,6 @@ import pygame as pg
 import subprocess
 import sys
 
-
-
-
 def get_git_root():
     result = subprocess.run(
         ["git", "rev-parse", "--show-toplevel"],
@@ -20,7 +17,6 @@ def get_git_root():
         return None
 
 root = get_git_root()
-print(root)
 
 pg.init()
 screen = pg.display.set_mode((800,600))
@@ -512,4 +508,5 @@ while True:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             pg.quit()
+
             sys.exit()
